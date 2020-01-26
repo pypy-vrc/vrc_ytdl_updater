@@ -182,7 +182,7 @@ namespace VRC_YTDL_Updater
                     pct = (int)((double)e.BytesReceived / e.TotalBytesToReceive * 100);
                 }
                 var size = Math.Round(e.BytesReceived / 1048576f, 2);
-                DownloadStatus.Text = $"Downloading {pct}% ({size}MiB)";
+                DownloadStatus.Text = $"Downloading {pct}% ({size} MiB)";
                 DownloadProgressBar.Value = pct;
             });
         }

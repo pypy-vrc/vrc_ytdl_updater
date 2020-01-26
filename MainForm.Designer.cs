@@ -125,6 +125,7 @@
             this.Controls.Add(this.DownloadProgressBar);
             this.Controls.Add(this.RemoteVersion);
             this.Controls.Add(this.LocalVersion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
