@@ -52,7 +52,7 @@ namespace VRC_YTDL_Updater
                     if (match.Success)
                     {
                         var path = match.Groups[1].Value;
-                        LocalFilePath = path + @"\VRChat_Data\StreamingAssets\youtube-dl.exe";
+                        LocalFilePath = path + @"\VRChat_Data\StreamingAssets\Tools\youtube-dl.exe";
                     }
                 }
             }
