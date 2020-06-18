@@ -1,6 +1,8 @@
 # VRChat youtube-dl updater
 
-There is a new release, but where is the hotfix? Oh please. it's too late. 😑
+🎉 As of VRChat build 944 (2020.06.18~), the youtube-dl auto update system has been added, so you no longer need to use it. 🎉
+
+~~There is a new release, but where is the hotfix? Oh please. it's too late. 😑~~
 
 ![image](https://user-images.githubusercontent.com/25771678/73131726-ab61d480-4053-11ea-919a-e523bda032a7.png)
 
