@@ -41,24 +41,7 @@ namespace VRC_YTDL_Updater
 
         private void GetLocalVersion()
         {
-            LocalFilePath = @"C:\Program Files (x86)\Steam\steamapps\common\VRChat\VRChat_Data\StreamingAssets\youtube-dl.exe";
-
-            try
-            {
-                using (var key = Registry.ClassesRoot.OpenSubKey(@"VRChat\shell\open\command"))
-                {
-                    // "C:\Program Files (x86)\Steam\steamapps\common\VRChat\launch.bat" "C:\Program Files (x86)\Steam\steamapps\common\VRChat" "%1"
-                    var match = Regex.Match(key.GetValue(string.Empty) as string, "^\"(.+\\\\VRChat)\\\\launch.bat\"");
-                    if (match.Success)
-                    {
-                        var path = match.Groups[1].Value;
-                        LocalFilePath = path + @"\VRChat_Data\StreamingAssets\Tools\youtube-dl.exe";
-                    }
-                }
-            }
-            catch
-            {
-            }
+            LocalFilePath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"Low\VRChat\VRChat\Tools\youtube-dl.exe";
 
             try
             {
